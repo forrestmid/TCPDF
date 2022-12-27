@@ -22695,7 +22695,7 @@ Putting 1 is equivalent to putting 0 and calling Ln() just after. Default value:
 	 * @since 5.9.000 (2010-09-29)
 	 */
 	public function setFontSpacing($spacing=0) {
-		$this->font_spacing = $spacing;
+		$this->font_spacing = floatval($spacing);
 	}
 
 	/**
